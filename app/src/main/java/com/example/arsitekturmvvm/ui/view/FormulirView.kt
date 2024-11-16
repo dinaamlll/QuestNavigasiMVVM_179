@@ -35,12 +35,12 @@ fun FormulirView(
     onClickButton: (MutableList<String>) -> Unit
 ) {
     var nama by remember { mutableStateOf("") }
-    var nim by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var noHp by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var jenisK by remember { mutableStateOf("") }
-    var listData: MutableList<String> = mutableListOf(nama, nim, jenisK, alamat, noHp
+    var NIM by remember { mutableStateOf("") }
+    var listData: MutableList<String> = mutableListOf(nama, email, noHp, alamat, jenisK, NIM
     )
 
     Column(
@@ -81,6 +81,7 @@ fun FormulirView(
 
             }
         }
+
         TextField(
             value = email,
             onValueChange = { email = it },
