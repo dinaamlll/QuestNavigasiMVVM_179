@@ -21,13 +21,16 @@ fun TampilMahasiswaView(
         TampilData(judul = "Nama",
                     isinya = mhs.nama
         )
+        TampilData(judul = "NIM",
+                    isinya = mhs.NIM
+        )
         TampilData(judul = "Gender",
-            isinya = mhs.gender
+                    isinya = mhs.gender
         )
         TampilData(judul = "Alamat",
-            isinya = mhs.alamat
-        )
+                    isinya = mhs.alamat
 
+        )
     }
 }
     @Composable
