@@ -34,6 +34,9 @@ fun TampilMahasiswaView(
         TampilData(judul = "Email",
                     isinya = mhs.email
         )
+        TampilData(judul = "No Hp",
+                    isinya = mhs.noHp
+        )
     }
 }
     @Composable
