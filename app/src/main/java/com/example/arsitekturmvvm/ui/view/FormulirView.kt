@@ -98,6 +98,20 @@ fun FormulirView(
         }
 
         TextField(
+            value = alamat,
+            onValueChange = { alamat = it },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp),
+            label = {
+                Text("Alamat")
+            },
+            placeholder = {
+                Text("Masukkan Alamat Anda")
+            }
+
+        )
+        TextField(
             value = email,
             onValueChange = { email = it },
             modifier = Modifier
@@ -124,20 +138,6 @@ fun FormulirView(
                 Text("Masukkan Nomor Handphone Anda")
             },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
-        )
-        TextField(
-            value = alamat,
-            onValueChange = { alamat = it },
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(5.dp),
-            label = {
-                Text("Alamat")
-            },
-            placeholder = {
-                Text("Masukkan Alamat Anda")
-            }
-
         )
         Button(onClick = {
             onClickButton(listData) //list data dipanggil dari var listData yang diatas
